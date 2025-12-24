@@ -37,7 +37,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer-container">
         {/* Social Links */}
-        <div className="footer-social">
+        {/* <div className="footer-social">
           {FOOTER_CONFIG.socialLinks.map((social, index) => {
             const Icon = social.icon
             return (
@@ -53,7 +53,7 @@ export default function Footer() {
               </a>
             )
           })}
-        </div>
+        </div> */}
 
         {/* Share Button */}
         {FOOTER_CONFIG.showSocialShare && (
