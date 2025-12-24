@@ -1,4 +1,4 @@
-# Bhagaya & Dulanga Wedding Website
+# Bhagya & Dulanga Wedding Website
 
 A modern, elegant, and fully responsive wedding website built with React, TypeScript, and Supabase.
 
@@ -27,7 +27,7 @@ All editable content is clearly marked with `/* EDITABLE: */` comments throughou
 **File: `src/components/Hero.tsx`**
 ```typescript
 const HERO_CONFIG = {
-  coupleName1: 'Bhagaya',           // Change to your names
+  coupleName1: 'Bhagya',           // Change to your names
   coupleName2: 'Dulanga',
   weddingDate: 'January 30, 2026',  // Your wedding date
   welcomeLine: "We can't wait to celebrate our special day with you!",
@@ -153,7 +153,7 @@ const TESTIMONIALS_CONFIG = {
 **File: `src/components/Navigation.tsx`**
 ```typescript
 const NAV_CONFIG = {
-  brandName: 'Bhagaya & Dulanga',  // Change to your names
+  brandName: 'Bhagya & Dulanga',  // Change to your names
   links: [
     // Add, remove, or modify navigation links
   ],
@@ -163,7 +163,7 @@ const NAV_CONFIG = {
 **File: `src/components/Footer.tsx`**
 ```typescript
 const FOOTER_CONFIG = {
-  coupleName: 'Bhagaya & Dulanga',  // Your names
+  coupleName: 'Bhagya & Dulanga',  // Your names
   socialLinks: [
     // Update with your social media URLs
   ],

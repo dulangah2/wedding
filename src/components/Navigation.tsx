@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react'
 import { Menu, X } from 'lucide-react'
 import './Navigation.css'
+import Logo from '../logo/logo.png' // Import the logo image
 
 /* EDITABLE: Navigation Configuration */
 const NAV_CONFIG = {
-  brandName: 'Bhagya & Dulanga',
   links: [
     { label: 'Home', href: '#hero' },
     { label: 'Our Story', href: '#about' },
@@ -36,9 +36,9 @@ export default function Navigation() {
   return (
     <nav className={`navigation ${isScrolled ? 'scrolled' : ''}`}>
       <div className="nav-container">
-        {/* EDITABLE: Brand Name */}
+        {/* EDITABLE: Logo */}
         <a href="#hero" className="nav-brand">
-          {NAV_CONFIG.brandName}
+          <img src={Logo} alt="Bhagya & Dulanga Logo" className="nav-logo" />
         </a>
 
         {/* Desktop Navigation */}

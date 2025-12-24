@@ -1,13 +1,13 @@
 import Navigation from './components/Navigation'
 import Hero from './components/Hero'
 import Countdown from './components/Countdown'
-import About from './components/About'
+// import About from './components/About'
 import Details from './components/Details'
-import Gallery from './components/Gallery'
+// import Gallery from './components/Gallery'
 import RSVP from './components/RSVP'
 // import Registry from './components/Registry'
 // import FAQ from './components/FAQ'
-import Testimonials from './components/Testimonials'
+// import Testimonials from './components/Testimonials'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
@@ -38,13 +38,13 @@ export default function App() {
       <Countdown />
 
       {/* EDITABLE: About/Our Story Section - Customize in src/components/About.tsx */}
-      <About />
+      {/* <About /> */}
 
       {/* EDITABLE: Wedding Details Section - Customize in src/components/Details.tsx */}
       <Details />
 
       {/* EDITABLE: Photo Gallery - Customize in src/components/Gallery.tsx */}
-      <Gallery />
+      {/* <Gallery /> */}
 
       {/* EDITABLE: RSVP Form - Customize in src/components/RSVP.tsx */}
       <RSVP />
@@ -56,7 +56,7 @@ export default function App() {
       {/* <FAQ /> */}
 
       {/* EDITABLE: Testimonials/Messages - Customize in src/components/Testimonials.tsx */}
-      <Testimonials />
+      {/* <Testimonials /> */}
 
       {/* EDITABLE: Contact Form - Customize in src/components/Contact.tsx */}
       <Contact />

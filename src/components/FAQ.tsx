@@ -20,7 +20,7 @@ const FAQ_CONFIG = {
     },
     {
       question: 'Are accommodations provided?',
-      answer: "We've arranged special rates at Sunset Beach Resort. Please contact the hotel directly and mention the Bhagaya & Dulanga wedding for the discounted rate.",
+      answer: "We've arranged special rates at Sunset Beach Resort. Please contact the hotel directly and mention the Bhagya & Dulanga wedding for the discounted rate.",
     },
     {
       question: 'Will the ceremony be indoors or outdoors?',

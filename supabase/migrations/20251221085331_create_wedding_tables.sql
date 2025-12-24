@@ -2,7 +2,7 @@
   # Wedding Website Database Schema
 
   ## Overview
-  Creates tables to store RSVP submissions and contact messages for Bhagaya & Dulanga's wedding website.
+  Creates tables to store RSVP submissions and contact messages for Bhagya & Dulanga's wedding website.
 
   ## Tables Created
   

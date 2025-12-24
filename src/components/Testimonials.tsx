@@ -6,7 +6,7 @@ const TESTIMONIALS_CONFIG = {
   title: 'Messages & Blessings',
   messages: [
     {
-      text: 'Congratulations, Bhagaya & Dulanga! Wishing you a lifetime of happiness.',
+      text: 'Congratulations, Bhagya & Dulanga! Wishing you a lifetime of happiness.',
       author: 'Sarah',
     },
     {

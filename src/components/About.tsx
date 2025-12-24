@@ -4,7 +4,7 @@ import './About.css'
 /* EDITABLE: About Section Configuration */
 const ABOUT_CONFIG = {
   title: 'Our Story',
-  content: "Bhagaya and Dulanga met in college and instantly became best friends. Over the years, their friendship grew into a beautiful love story. Now, they're ready to start the next chapter together!",
+  content: "Bhagya and Dulanga met in college and instantly became best friends. Over the years, their friendship grew into a beautiful love story. Now, they're ready to start the next chapter together!",
   image1: 'https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=800', // EDITABLE: Replace with your image URL
   image2: 'https://images.pexels.com/photos/1445702/pexels-photo-1445702.jpeg?auto=compress&cs=tinysrgb&w=800', // EDITABLE: Replace with your image URL
 }
@@ -32,14 +32,14 @@ export default function About() {
             <div className="about-image-wrapper">
               <img
                 src={ABOUT_CONFIG.image1}
-                alt="Bhagaya and Dulanga together"
+                alt="Bhagya and Dulanga together"
                 className="about-image"
               />
             </div>
             <div className="about-image-wrapper">
               <img
                 src={ABOUT_CONFIG.image2}
-                alt="Bhagaya and Dulanga portrait"
+                alt="Bhagya and Dulanga portrait"
                 className="about-image"
               />
             </div>

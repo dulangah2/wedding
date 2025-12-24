@@ -3,7 +3,7 @@ import './Footer.css'
 
 /* EDITABLE: Footer Configuration */
 const FOOTER_CONFIG = {
-  coupleName: 'Bhagaya & Dulanga',
+  coupleName: 'Bhagya & Dulanga',
   year: new Date().getFullYear(),
   socialLinks: [
     { icon: Facebook, url: 'https://facebook.com', label: 'Facebook' }, // EDITABLE: Replace with your social media URLs

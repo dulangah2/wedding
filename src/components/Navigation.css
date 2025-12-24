@@ -104,6 +104,11 @@
   background: var(--color-primary);
 }
 
+.nav-logo {
+  height: 80px; /* adjust as needed */
+  width: auto;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .nav-links {

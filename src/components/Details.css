@@ -1,130 +1,198 @@
-/* EDITABLE: Details Section Styles */
+/* Updated Styles with Venue Gallery */
 
 .details-section {
-  background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-white) 100%);
+  background: var(--color-white);
   text-align: center;
+  padding: var(--spacing-xl) 0;
 }
 
 .details-container {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 0 auto;
+  padding: 0 var(--spacing-md);
 }
 
-/* EDITABLE: Title Styling */
 .details-title {
-  margin-bottom: var(--spacing-lg);
+  margin-bottom: var(--spacing-sm);
   color: var(--color-text-dark);
+  font-size: 2.5rem;
 }
 
-/* Details Grid */
-.details-grid {
+.details-date {
+  font-size: 1.6rem;
+  color: var(--color-accent);
+  margin-bottom: var(--spacing-xl);
+  font-weight: 600;
+}
+
+/* Venue Gallery - 3 balanced images */
+.venue-gallery {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: var(--spacing-lg);
-  margin-bottom: var(--spacing-lg);
+  margin-bottom: var(--spacing-xl);
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* Detail Cards */
-.detail-card {
-  background: var(--color-white);
-  padding: var(--spacing-lg);
-  border-radius: var(--radius-md);
+.venue-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
-  text-align: left;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.venue-image:hover {
+  transform: scale(1.05);
+  box-shadow: var(--shadow-xl);
+}
+
+/* Single Unified Card (unchanged) */
+.detail-card.single {
+  background: var(--color-white);
+  padding: var(--spacing-xl);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  max-width: 800px;
+  margin: 0 auto var(--spacing-xl);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.detail-card:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-lg);
+.detail-card.single:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
 }
 
-/* EDITABLE: Card Title */
-.detail-card-title {
-  font-size: clamp(1.5rem, 3vw, 2rem);
-  color: var(--color-accent);
-  margin-bottom: var(--spacing-md);
-  text-align: center;
+.event-schedule {
+  margin-bottom: var(--spacing-xl);
 }
 
-/* Detail Items */
-.detail-item {
+.schedule-item {
   display: flex;
-  align-items: flex-start;
-  gap: var(--spacing-sm);
-  margin-bottom: var(--spacing-md);
-  color: var(--color-text-light);
-  font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+  align-items: center;
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+  text-align: left;
 }
 
-.detail-item svg {
+.schedule-item:last-child {
+  margin-bottom: 0;
+}
+
+.schedule-item svg {
   color: var(--color-accent);
   flex-shrink: 0;
-  margin-top: 2px;
+}
+
+.event-title {
+  font-size: 1.8rem;
+  color: var(--color-accent);
+  margin: 0 0 var(--spacing-xs);
+  font-weight: 600;
+}
+
+.time-text {
+  font-size: 1.3rem;
+  color: var(--color-text-dark);
+  margin: 0;
+}
+
+.location-info {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+  padding-top: var(--spacing-lg);
+  border-top: 2px dashed rgba(255, 152, 181, 0.3);
+  text-align: left;
+}
+
+.location-info svg {
+  color: var(--color-accent);
+  flex-shrink: 0;
+}
+
+.location-name {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--color-text-dark);
 }
 
 .detail-address {
+  font-size: 1.1rem;
   color: var(--color-text-light);
-  font-size: 0.9em;
-  opacity: 0.8;
 }
 
-/* Calendar Buttons */
+/* Calendar Buttons & Map (unchanged) */
 .calendar-buttons {
   display: flex;
   justify-content: center;
-  gap: var(--spacing-md);
-  margin-bottom: var(--spacing-lg);
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-xl);
   flex-wrap: wrap;
 }
 
-/* EDITABLE: Button Styling */
 .calendar-button {
   display: inline-flex;
   align-items: center;
-  gap: var(--spacing-xs);
-  padding: var(--spacing-sm) var(--spacing-md);
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md) var(--spacing-lg);
   background: var(--color-accent);
   color: var(--color-white);
-  border-radius: var(--radius-sm);
-  font-weight: 500;
-  font-size: 1rem;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  font-size: 1.1rem;
   box-shadow: var(--shadow-sm);
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .calendar-button:hover {
-  background: #FF9AB5;
-  transform: translateY(-2px);
+  background: #ff8cab;
+  transform: translateY(-3px);
   box-shadow: var(--shadow-md);
 }
 
-/* Map Container */
 .map-container {
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-lg);
   overflow: hidden;
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--shadow-lg);
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .details-grid {
+/* Responsive */
+@media (max-width: 868px) {
+  .venue-gallery {
     grid-template-columns: 1fr;
+  }
+
+  .venue-image {
+    height: 260px;
+  }
+
+  .schedule-item,
+  .location-info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .schedule-item svg,
+  .location-info svg {
+    margin-bottom: var(--spacing-sm);
   }
 
   .calendar-buttons {
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
   }
 
   .calendar-button {
+    width: 80%;
     justify-content: center;
-  }
-
-  .map-container iframe {
-    height: 300px;
   }
 }

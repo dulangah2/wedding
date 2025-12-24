@@ -7,27 +7,27 @@ const GALLERY_CONFIG = {
   images: [
     {
       url: 'https://images.pexels.com/photos/2253870/pexels-photo-2253870.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Bhagaya and Dulanga at the beach',
+      alt: 'Bhagya and Dulanga at the beach',
     },
     {
       url: 'https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Bhagaya and Dulanga laughing together',
+      alt: 'Bhagya and Dulanga laughing together',
     },
     {
       url: 'https://images.pexels.com/photos/1444442/pexels-photo-1444442.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Bhagaya and Dulanga portrait',
+      alt: 'Bhagya and Dulanga portrait',
     },
     {
       url: 'https://images.pexels.com/photos/1445702/pexels-photo-1445702.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Bhagaya and Dulanga close-up',
+      alt: 'Bhagya and Dulanga close-up',
     },
     {
       url: 'https://images.pexels.com/photos/2959192/pexels-photo-2959192.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Bhagaya and Dulanga outdoors',
+      alt: 'Bhagya and Dulanga outdoors',
     },
     {
       url: 'https://images.pexels.com/photos/2788488/pexels-photo-2788488.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Bhagaya and Dulanga candid',
+      alt: 'Bhagya and Dulanga candid',
     },
   ], // EDITABLE: Add or replace image URLs
 }
