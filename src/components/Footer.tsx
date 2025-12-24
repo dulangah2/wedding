@@ -1,4 +1,4 @@
-import { Heart, Facebook, Instagram, Twitter, Share2 } from 'lucide-react'
+import { Heart, Share2 } from 'lucide-react'
 import './Footer.css'
 
 /* EDITABLE: Footer Configuration */
@@ -6,11 +6,11 @@ const FOOTER_CONFIG = {
   coupleName: 'Bhagya & Dulanga',
   year: new Date().getFullYear(),
   socialLinks: [
-    { icon: Facebook, url: 'https://facebook.com', label: 'Facebook' }, // EDITABLE: Replace with your social media URLs
-    { icon: Instagram, url: 'https://instagram.com', label: 'Instagram' },
-    { icon: Twitter, url: 'https://twitter.com', label: 'Twitter' },
+    // { icon: Facebook, url: 'https://facebook.com', label: 'Facebook' }, // EDITABLE: Replace with your social media URLs
+    // { icon: Instagram, url: 'https://instagram.com', label: 'Instagram' },
+    // { icon: Twitter, url: 'https://twitter.com', label: 'Twitter' },
   ],
-  showSocialShare: true, // EDITABLE: Set to false to hide social sharing
+  showSocialShare: false, // EDITABLE: Set to false to hide social sharing
 }
 
 export default function Footer() {

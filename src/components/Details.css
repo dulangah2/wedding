@@ -1,5 +1,6 @@
-/* Updated Styles with Venue Gallery */
-
+/* ==============================
+   Details Section & Container
+============================== */
 .details-section {
   background: var(--color-white);
   text-align: center;
@@ -25,15 +26,15 @@
   font-weight: 600;
 }
 
-/* Venue Gallery - 3 balanced images */
+/* ==============================
+   Venue Gallery - 3 balanced images
+============================== */
 .venue-gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--spacing-lg);
-  margin-bottom: var(--spacing-xl);
+  margin: 0 auto var(--spacing-xl);
   max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .venue-image {
@@ -50,7 +51,9 @@
   box-shadow: var(--shadow-xl);
 }
 
-/* Single Unified Card (unchanged) */
+/* ==============================
+   Single Unified Card
+============================== */
 .detail-card.single {
   background: var(--color-white);
   padding: var(--spacing-xl);
@@ -66,6 +69,9 @@
   box-shadow: var(--shadow-xl);
 }
 
+/* ==============================
+   Event Schedule
+============================== */
 .event-schedule {
   margin-bottom: var(--spacing-xl);
 }
@@ -100,6 +106,9 @@
   margin: 0;
 }
 
+/* ==============================
+   Location Info
+============================== */
 .location-info {
   display: flex;
   align-items: center;
@@ -125,7 +134,9 @@
   color: var(--color-text-light);
 }
 
-/* Calendar Buttons & Map (unchanged) */
+/* ==============================
+   Calendar Buttons
+============================== */
 .calendar-buttons {
   display: flex;
   justify-content: center;
@@ -155,6 +166,9 @@
   box-shadow: var(--shadow-md);
 }
 
+/* ==============================
+   Map Container
+============================== */
 .map-container {
   width: 100%;
   max-width: 900px;
@@ -164,35 +178,79 @@
   box-shadow: var(--shadow-lg);
 }
 
-/* Responsive */
+/* ==============================
+   Responsive - Mobile Optimized
+============================== */
 @media (max-width: 868px) {
+  /* Venue Gallery becomes 1 column */
   .venue-gallery {
     grid-template-columns: 1fr;
+    gap: var(--spacing-md);
   }
 
   .venue-image {
     height: 260px;
   }
 
-  .schedule-item,
+  /* Schedule Items - vertical, smaller gaps */
+  .schedule-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+  }
+
+  .schedule-item svg {
+    margin-bottom: var(--spacing-xs);
+  }
+
+  /* Location Info - vertical, smaller gaps */
   .location-info {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: var(--spacing-sm);
+    padding-top: var(--spacing-md);
   }
 
-  .schedule-item svg,
   .location-info svg {
-    margin-bottom: var(--spacing-sm);
+    margin-bottom: var(--spacing-xs);
   }
 
+  /* Calendar Buttons - stacked */
   .calendar-buttons {
     flex-direction: column;
     align-items: center;
+    gap: var(--spacing-md);
   }
 
   .calendar-button {
-    width: 80%;
+    width: 90%;
     justify-content: center;
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: 1rem;
+  }
+
+  /* Detail Card - reduce padding */
+  .detail-card.single {
+    padding: var(--spacing-lg);
+  }
+
+  /* Text Adjustments */
+  .event-title {
+    font-size: 1.5rem;
+  }
+
+  .time-text {
+    font-size: 1.2rem;
+  }
+
+  .location-name {
+    font-size: 1.4rem;
+  }
+
+  .detail-address {
+    font-size: 1rem;
   }
 }

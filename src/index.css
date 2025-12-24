@@ -2,13 +2,13 @@
 
 :root {
   /* EDITABLE: Color Palette */
-  --color-primary: #FDE2E2; /* Soft pastel pink */
-  --color-secondary: #FFF5E1; /* Soft cream */
-  --color-accent: #FFB6C1; /* Light pink accent */
-  --color-text-dark: #3D3D3D; /* Dark gray text */
-  --color-text-light: #666666; /* Medium gray text */
+  --color-primary: #F4E6FA;      /* Soft lavender background / main sections */
+  --color-secondary: #EDE1F7;    /* Slightly deeper lavender for cards / sections */
+  --color-accent: #B28ED9;       /* Purple accent for buttons, highlights */
+  --color-text-dark: #DA8EE7;    /* Main text color */
+  --color-text-light: #9C7EB3;   /* Secondary text color / muted text */
   --color-white: #FFFFFF;
-  --color-overlay: rgba(253, 226, 226, 0.7); /* Semi-transparent overlay */
+  --color-overlay: rgba(218, 142, 231, 0.2); 
 
   /* EDITABLE: Typography */
   --font-heading: 'Cormorant Garamond', serif; /* Elegant serif font */
