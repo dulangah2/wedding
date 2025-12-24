@@ -1,0 +1,145 @@
+/* EDITABLE: RSVP Section Styles */
+
+.rsvp-section {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  text-align: center;
+}
+
+.rsvp-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* EDITABLE: Title Styling */
+.rsvp-title {
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-text-dark);
+}
+
+/* EDITABLE: Subtitle Styling */
+.rsvp-subtitle {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  color: var(--color-text-light);
+  margin-bottom: var(--spacing-lg);
+}
+
+/* Form Styling */
+.rsvp-form {
+  background: var(--color-white);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: var(--spacing-md);
+}
+
+/* EDITABLE: Label Styling */
+.form-label {
+  display: block;
+  font-weight: 500;
+  color: var(--color-text-dark);
+  margin-bottom: var(--spacing-xs);
+  font-size: 1rem;
+}
+
+/* EDITABLE: Input Styling */
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: var(--spacing-sm);
+  border: 2px solid #E5E5E5;
+  border-radius: var(--radius-sm);
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  background: var(--color-white);
+  color: var(--color-text-dark);
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-color: var(--color-accent);
+}
+
+.form-textarea {
+  resize: vertical;
+  font-family: var(--font-body);
+}
+
+/* EDITABLE: Submit Button */
+.rsvp-button {
+  width: 100%;
+  padding: var(--spacing-md);
+  background: var(--color-accent);
+  color: var(--color-white);
+  border-radius: var(--radius-sm);
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-xs);
+  box-shadow: var(--shadow-md);
+  transition: all 0.3s ease;
+}
+
+.rsvp-button:hover:not(:disabled) {
+  background: #FF9AB5;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.rsvp-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Error Message */
+.error-message {
+  background: #FEE;
+  color: #C33;
+  padding: var(--spacing-sm);
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--spacing-md);
+  text-align: center;
+}
+
+/* Success State */
+.rsvp-success {
+  background: var(--color-white);
+  padding: var(--spacing-xl);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  text-align: center;
+}
+
+.success-icon {
+  color: #4CAF50;
+  margin: 0 auto var(--spacing-md);
+  animation: pulse 1.5s ease-in-out;
+}
+
+.success-title {
+  color: var(--color-text-dark);
+  margin-bottom: var(--spacing-md);
+}
+
+.success-message {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  color: var(--color-text-light);
+  margin-bottom: var(--spacing-lg);
+  line-height: 1.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .rsvp-form {
+    padding: var(--spacing-md);
+  }
+
+  .rsvp-button {
+    font-size: 1rem;
+  }
+}

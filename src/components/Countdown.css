@@ -1,0 +1,95 @@
+/* EDITABLE: Countdown Section Styles */
+
+.countdown-section {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  text-align: center;
+}
+
+.countdown-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* EDITABLE: Icon Styling */
+.countdown-icon {
+  color: var(--color-accent);
+  display: inline-flex;
+  margin-bottom: var(--spacing-md);
+}
+
+/* EDITABLE: Title Styling */
+.countdown-title {
+  margin-bottom: var(--spacing-lg);
+  color: var(--color-text-dark);
+}
+
+/* Countdown Grid */
+.countdown-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+}
+
+.countdown-item {
+  background: var(--color-white);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.countdown-item:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* EDITABLE: Number Styling */
+.countdown-number {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 700;
+  color: var(--color-accent);
+  font-family: var(--font-heading);
+  line-height: 1;
+}
+
+/* EDITABLE: Label Styling */
+.countdown-label {
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
+  color: var(--color-text-light);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: var(--spacing-xs);
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .countdown-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-sm);
+  }
+
+  .countdown-item:nth-child(4),
+  .countdown-item:nth-child(5) {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .countdown-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .countdown-item:nth-child(5) {
+    grid-column: span 2;
+  }
+
+  .countdown-number {
+    font-size: 2rem;
+  }
+
+  .countdown-label {
+    font-size: 0.7rem;
+  }
+}

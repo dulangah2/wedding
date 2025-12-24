@@ -1,0 +1,77 @@
+/* EDITABLE: Testimonials Section Styles */
+
+.testimonials-section {
+  background: var(--color-white);
+  text-align: center;
+}
+
+.testimonials-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* EDITABLE: Icon Styling */
+.testimonials-icon {
+  color: var(--color-accent);
+  display: inline-flex;
+  margin-bottom: var(--spacing-md);
+}
+
+/* EDITABLE: Title Styling */
+.testimonials-title {
+  margin-bottom: var(--spacing-lg);
+  color: var(--color-text-dark);
+}
+
+/* Testimonials Grid */
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-md);
+}
+
+/* EDITABLE: Testimonial Cards */
+.testimonial-card {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* EDITABLE: Quote Icon */
+.quote-icon {
+  color: var(--color-accent);
+  opacity: 0.3;
+  margin-bottom: var(--spacing-sm);
+}
+
+/* EDITABLE: Testimonial Text */
+.testimonial-text {
+  font-size: clamp(0.95rem, 1.8vw, 1.1rem);
+  color: var(--color-text-light);
+  line-height: 1.8;
+  margin-bottom: var(--spacing-md);
+  font-style: italic;
+}
+
+/* EDITABLE: Author Name */
+.testimonial-author {
+  font-size: clamp(0.9rem, 1.6vw, 1rem);
+  color: var(--color-text-dark);
+  font-weight: 600;
+  font-family: var(--font-heading);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+}

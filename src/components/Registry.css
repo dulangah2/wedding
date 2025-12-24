@@ -1,0 +1,91 @@
+/* EDITABLE: Registry Section Styles */
+
+.registry-section {
+  background: var(--color-white);
+  text-align: center;
+}
+
+.registry-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* EDITABLE: Icon Styling */
+.registry-icon {
+  color: var(--color-accent);
+  display: inline-flex;
+  margin-bottom: var(--spacing-md);
+}
+
+/* EDITABLE: Title Styling */
+.registry-title {
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text-dark);
+}
+
+/* EDITABLE: Subtitle Styling */
+.registry-subtitle {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  color: var(--color-text-light);
+  max-width: 700px;
+  margin: 0 auto var(--spacing-lg);
+  line-height: 1.8;
+}
+
+/* Registry Grid */
+.registry-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-md);
+}
+
+/* EDITABLE: Registry Cards */
+.registry-card {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+}
+
+.registry-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* EDITABLE: Card Title */
+.registry-card-title {
+  font-size: clamp(1.3rem, 2.5vw, 1.6rem);
+  color: var(--color-text-dark);
+  margin-bottom: var(--spacing-sm);
+}
+
+/* EDITABLE: Card Description */
+.registry-card-description {
+  color: var(--color-text-light);
+  margin-bottom: var(--spacing-md);
+  font-size: 1rem;
+}
+
+/* EDITABLE: Card Link */
+.registry-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  color: var(--color-accent);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .registry-grid {
+    grid-template-columns: 1fr;
+  }
+}

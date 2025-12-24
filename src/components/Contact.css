@@ -1,0 +1,202 @@
+/* EDITABLE: Contact Section Styles */
+
+.contact-section {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  text-align: center;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* EDITABLE: Icon Styling */
+.contact-icon {
+  color: var(--color-accent);
+  display: inline-flex;
+  margin-bottom: var(--spacing-md);
+}
+
+/* EDITABLE: Title Styling */
+.contact-title {
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-text-dark);
+}
+
+/* EDITABLE: Subtitle Styling */
+.contact-subtitle {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  color: var(--color-text-light);
+  margin-bottom: var(--spacing-md);
+}
+
+/* EDITABLE: Email Link */
+.contact-email {
+  display: inline-block;
+  font-size: clamp(1.1rem, 2.2vw, 1.3rem);
+  color: var(--color-accent);
+  font-weight: 600;
+  margin-bottom: var(--spacing-lg);
+  transition: opacity 0.3s ease;
+}
+
+.contact-email:hover {
+  opacity: 0.8;
+}
+
+/* Form Styling */
+.contact-form {
+  background: var(--color-white);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: var(--spacing-md);
+}
+
+/* EDITABLE: Label Styling */
+.form-label {
+  display: block;
+  font-weight: 500;
+  color: var(--color-text-dark);
+  margin-bottom: var(--spacing-xs);
+  font-size: 1rem;
+}
+
+/* EDITABLE: Input Styling */
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: var(--spacing-sm);
+  border: 2px solid #E5E5E5;
+  border-radius: var(--radius-sm);
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  background: var(--color-white);
+  color: var(--color-text-dark);
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-color: var(--color-accent);
+}
+
+.form-textarea {
+  resize: vertical;
+  font-family: var(--font-body);
+}
+
+/* EDITABLE: Submit Button */
+.contact-button {
+  width: 100%;
+  padding: var(--spacing-md);
+  background: var(--color-accent);
+  color: var(--color-white);
+  border-radius: var(--radius-sm);
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-xs);
+  box-shadow: var(--shadow-md);
+  transition: all 0.3s ease;
+}
+
+.contact-button:hover:not(:disabled) {
+  background: #FF9AB5;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.contact-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Success Message */
+.contact-success {
+  background: var(--color-white);
+  padding: var(--spacing-xl);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  text-align: center;
+}
+
+.contact-success .success-icon {
+  color: #4CAF50;
+  margin: 0 auto var(--spacing-md);
+  animation: pulse 1.5s ease-in-out;
+}
+
+.contact-success p {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  color: var(--color-text-light);
+  line-height: 1.8;
+}
+
+/* Error Message */
+.error-message {
+  background: #FEE;
+  color: #C33;
+  padding: var(--spacing-sm);
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--spacing-md);
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-form {
+    padding: var(--spacing-md);
+  }
+
+  .contact-button {
+    font-size: 1rem;
+  }
+}
+
+
+/* =========================
+   Phone Numbers
+========================= */
+
+.contact-phones {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-lg);
+}
+
+.contact-phone {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-sm);
+  background: var(--color-white);
+  border: 2px solid #E5E5E5;
+  border-radius: var(--radius-sm);
+  color: var(--color-text-dark);
+  font-weight: 500;
+  text-decoration: none;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+}
+
+.contact-phone:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Responsive: stack phones on mobile */
+@media (max-width: 600px) {
+  .contact-phones {
+    grid-template-columns: 1fr;
+  }
+}
