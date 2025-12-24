@@ -7,11 +7,11 @@ import Logo from '../logo/logo.png' // Import the logo image
 const NAV_CONFIG = {
   links: [
     { label: 'Home', href: '#hero' },
-    { label: 'Our Story', href: '#about' },
+    // { label: 'Our Story', href: '#about' },
     { label: 'Details', href: '#details' },
-    { label: 'Gallery', href: '#gallery' },
+    // { label: 'Gallery', href: '#gallery' },
     { label: 'RSVP', href: '#rsvp' },
-    { label: 'FAQs', href: '#faq' },
+    // { label: 'FAQs', href: '#faq' },
     { label: 'Contact', href: '#contact' },
   ], // EDITABLE: Add, remove, or modify navigation links
 }
